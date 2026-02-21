@@ -86,7 +86,22 @@
       "name": "lista paginada",
       "request": {
         "method": "GET",
-        "header": []
+        "header": [],
+        "url": {
+          "raw": "{{baseURL}}/list?limit=10",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "list"
+          ],
+          "query": [
+            {
+              "key": "limit",
+              "value": "10"
+            }
+          ]
+        }
       },
       "response": []
     },
