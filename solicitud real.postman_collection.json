@@ -11,26 +11,25 @@
       "name": "obtener pato",
       "request": {
         "method": "GET",
-        "header": [],
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "User-Agent",
+            "value": "MiApp/1.0",
+            "type": "text"
+          }
+        ],
         "url": {
-          "raw": "{{baseURL}}/random?Accept=application/json&User-Agent=MiApp/1.0",
+          "raw": "{{baseURL}}/random",
           "host": [
             "{{baseURL}}"
           ],
           "path": [
             "random"
-          ],
-          "query": [
-            {
-              "key": "Accept",
-              "value": "application/json",
-              "type": "text"
-            },
-            {
-              "key": "User-Agent",
-              "value": "MiApp/1.0",
-              "type": "text"
-            }
           ]
         }
       },

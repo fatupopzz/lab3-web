@@ -11,7 +11,16 @@
       "name": "pato inexistente",
       "request": {
         "method": "GET",
-        "header": []
+        "header": [],
+        "url": {
+          "raw": "{{baseURL}}/99999.jpg",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "99999.jpg"
+          ]
+        }
       },
       "response": []
     },
@@ -19,7 +28,17 @@
       "name": "bad request",
       "request": {
         "method": "GET",
-        "header": []
+        "header": [],
+        "url": {
+          "raw": "{{baseURL}}/http/400",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "http",
+            "400"
+          ]
+        }
       },
       "response": []
     },
@@ -47,13 +66,19 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{baseURL}}/http/401",
+          "raw": "{{baseURL}}/http/401?Authorization=Bearer token_falso_123",
           "host": [
             "{{baseURL}}"
           ],
           "path": [
             "http",
             "401"
+          ],
+          "query": [
+            {
+              "key": "Authorization",
+              "value": "Bearer token_falso_123"
+            }
           ]
         }
       },
@@ -63,7 +88,17 @@
       "name": "403 forbidden",
       "request": {
         "method": "GET",
-        "header": []
+        "header": [],
+        "url": {
+          "raw": "{{baseURL}}/http/403",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "http",
+            "403"
+          ]
+        }
       },
       "response": []
     }
