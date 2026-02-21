@@ -1,0 +1,40 @@
+{
+  "info": {
+    "_postman_id": "509c6e07-98b1-4986-b2cc-662010063704",
+    "name": "solicitud real",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52549756",
+    "_collection_link": "https://go.postman.co/collection/52549756-509c6e07-98b1-4986-b2cc-662010063704?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "obtener pato",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseURL}}/random?Accept=application/json&User-Agent=MiApp/1.0",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "random"
+          ],
+          "query": [
+            {
+              "key": "Accept",
+              "value": "application/json",
+              "type": "text"
+            },
+            {
+              "key": "User-Agent",
+              "value": "MiApp/1.0",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "info": {
+    "_postman_id": "0c5c4e20-53a7-4552-89a0-318ef8dae896",
+    "name": "Errores intencionales",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52549756",
+    "_collection_link": "https://go.postman.co/collection/52549756-0c5c4e20-53a7-4552-89a0-318ef8dae896?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "pato inexistente",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "bad request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "bad request (real no fake)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseURL}}/!!!@@##",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "!!!@@"
+          ],
+          "hash": "#"
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "401 Unauthorized",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseURL}}/http/401",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "http",
+            "401"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "403 forbidden",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
